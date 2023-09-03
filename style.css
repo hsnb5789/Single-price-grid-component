@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    /* ### Primary */
+
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright_Yellow: hsl(71, 73%, 54%);
+
+    /* ### Neutral */
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    --font1: 'Karla', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--Light-Gray);
+    font-family: var(--font1);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    width: 310px;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px 0;
+    margin: 30px auto;
+}
+
+.top-section {
+    border-radius: 10px 10px 0 0;
+    background-color: #fff;
+    padding: 20px;
+    text-align: start;
+}
+
+.top-section h3 {
+    color: var(--Cyan);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.top-section h5 {
+    color: var(--Bright_Yellow);
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.top-section p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--Grayish-Blue);
+}
+
+.bottom-section {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    width: 100%;
+    color: var(--Light-Gray);
+}
+
+.signup {
+    width: 100%;
+    background-color: var(--Cyan);
+    padding: 20px;
+    text-align: start;
+}
+
+.signup h4 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.signup h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.signup h1 span {
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.6;
+    margin-left: 15px;
+    color: var(--Light-Gray);
+}
+
+.signup p {
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.signup button {
+    width: 100%;
+    padding: 15px 0;
+    color: var(--Light-Gray);
+    background-color: var(--Bright_Yellow);
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.whyus {
+    background-color: var(--Cyan);
+    opacity: 0.885;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+}
+
+.whyus h4 {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.whyus p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media screen and (min-width:950px) {
+    .container {
+        width: 650px;
+    }
+
+    .top-section {
+        padding: 50px;
+    }
+
+    .top-section p {
+        margin-right: 50px;
+    }
+
+    .bottom-section {
+        display: flex;
+    }
+
+    .signup {
+        border-radius: 0 0 0 10px;
+        padding: 30px;
+    }
+
+    .whyus {
+        border-radius: 0 0 10px 0;
+        padding: 30px;
+    }
+}
